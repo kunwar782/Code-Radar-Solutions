@@ -13,7 +13,7 @@ int main(){
         printf("Go");
     }
     else{
-        printf("Invald input");
+        printf("Invalid input");
     }
     return 0;
 }
