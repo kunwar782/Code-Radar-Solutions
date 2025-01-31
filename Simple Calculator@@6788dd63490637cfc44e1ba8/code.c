@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 int main(){
-    int a,b;
+    char a[3];
     char c;
-    scanf("%d %d %c",&a,&b,&c);
-    switch(c){
+    for (int i=0;i<3;i++){
+        scanf("%c",&a[i]);
+    }
+    int a=(int)a[0],b=(int)a[1];
+    switch(a[2]){
         case '+':
         printf("%d",a+b);
         case '-':
