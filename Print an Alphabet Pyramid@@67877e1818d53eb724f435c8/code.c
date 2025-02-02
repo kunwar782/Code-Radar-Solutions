@@ -7,9 +7,10 @@ int main(){
         int a=65;
         for(int j=1;j<=i;j++){
             printf("%c ",(char)a);
+            a+=1;
         }
         printf("\n");
     }
     return 0;
-    
+
 }
