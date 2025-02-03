@@ -8,7 +8,7 @@ int main(){
             if(i==1){
                 printf("1");
             }
-            else if((j+1)%2==0){
+            else if((j)%2==0){
                 printf("0 ");
             }
             else{
