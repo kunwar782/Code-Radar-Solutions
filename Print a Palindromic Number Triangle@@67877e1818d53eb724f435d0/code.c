@@ -11,7 +11,11 @@ int main(){
             printf("%d",k);
         }
         for(int l=0;l<=i-1;l++){
-            printf("%d",l);
+            if(l==0){
+                printf("\n");
+            }
+            else{
+            printf("%d",l);}
         }
         printf("\n");
     }
