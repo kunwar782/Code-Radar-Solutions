@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 int main(){
-    char a[3];
+    int a,b;
     char c;
-    for (int i=0;i<3;i++){
-        scanf("%c",&a[i]);
-    }
-    int a=(int)a[0],b=(int)a[1];
-    switch(a[2]){
-        case '+':
+    scanf("%d %d %c",&a,&b,&c);
+    if(c=='+'){
         printf("%d",a+b);
-        case '-':
+    }
+    else if(c=='-'){
         printf("%d",a-b);
-        case '*':
+    }
+    else if(c=='*'){
         printf("%d",a*b);
-        case '/':
-        if(a[1]==0){
+    }
+    else if(c=='/'){
+        if (b==0){
             printf("error");
         }
         else{
             printf("%d",a/b);
-        }
-        default:
-        continue;
+        }}
+    else{
+        printf("error");
     }
     return 0;
+    
 }
