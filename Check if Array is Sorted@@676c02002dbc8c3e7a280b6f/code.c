@@ -9,13 +9,17 @@ int main(){
     }
     int c=0;
     for (int i=0;i<n;i++){
-        if(arr[i]>arr[i+1]){
-           c+=1;
+        if(arr[i]!=arr[i+1]){
+            if(arr[i]>arr[i+1]){
+                c+=1;
+            }
+            else{
+                continue;
+            }
         }
         else{
-             continue;
+            continue;
         }
-        
     }
     if(c>0){
         printf("Not Sorted");
