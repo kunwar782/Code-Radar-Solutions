@@ -12,13 +12,13 @@ int main(){
         if(i==0){
             if(arr[0]>arr[1] && arr[0]>arr[n-1]){
                 printf("%d",arr[0]);
-                c+=1
+                c+=1;
                 break;}}
         
         else if(i==n-1){
             if(arr[n-1]>arr[n-2] && arr[n-1]>arr[0]){
                 printf("%d",arr[n-1]);
-                c+=1
+                c+=1;
                 break;
             }
 
