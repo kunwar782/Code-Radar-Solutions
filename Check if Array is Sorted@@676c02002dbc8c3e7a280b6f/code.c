@@ -8,13 +8,15 @@ int main(){
         scanf("%d ",&arr[i]);
     }
     int c=0;
+    int a=arr[0];
     for (int i=0;i<n;i++){
-        if(arr[i]!=arr[i+1]){
-            if(arr[i]>arr[i+1]){
+       if(i!=0){
+            if(arr[i-1]>arr[i]){
                 c+=1;
-            }
+            }}
+        
         }
-    }
+    
     if(c>0){
         printf("Not Sorted");
     }
