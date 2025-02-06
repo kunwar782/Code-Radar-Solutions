@@ -37,8 +37,8 @@ int main(){
            
             
         }
-        if(c<1){
-            printf("-1");
+        if(c==0){
+            printf("%d",-1);
         }
         
     }
