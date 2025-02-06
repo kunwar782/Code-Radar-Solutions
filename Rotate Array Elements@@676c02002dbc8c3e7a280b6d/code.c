@@ -8,7 +8,7 @@ int main(){
     }
     int pos;
     scanf("%d",&pos);
-    for(int i=0;i<pos;i++){
+    for(int i=0;i<=pos;i++){
         first_val=arr[n-pos+i];
         second_value=arr[i];
         arr[i]=first_val;
