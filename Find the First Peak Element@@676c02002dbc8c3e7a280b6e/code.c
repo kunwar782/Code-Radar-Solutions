@@ -31,8 +31,8 @@ int main(){
             }
             
         }
-        if(c==0){
-            printf("%d",-1);
+        if(c<1){
+            printf("-1");
         }
         
     }
