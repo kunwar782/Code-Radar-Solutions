@@ -9,10 +9,10 @@ int main(){
     int pos;
     scanf("%d",&pos);
     for(int i=n-pos;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d \n",arr[i]);
     }
     for(int i=0;i<n-pos;i++){
-        printf("%d",arr[i]);
+        printf("%d \n",arr[i]);
     }
     return 0;
 }
