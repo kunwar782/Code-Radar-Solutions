@@ -23,18 +23,12 @@ int main(){
             }
 
         }
-        else if(i!=0 || i!=n-1){
+        else{
             if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
                 printf("%d",arr[i]);
                 c+=1;
                 break;
             }
-            
-        }
-        
-        else{
-           continue;
-           
             
         }
         if(c==0){
