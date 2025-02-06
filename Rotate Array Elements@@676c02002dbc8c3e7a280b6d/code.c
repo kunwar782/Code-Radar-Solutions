@@ -8,13 +8,10 @@ int main(){
     }
     int pos;
     scanf("%d",&pos);
-    for(int i=0;i<pos;i++){
-        a=arr[n-pos+i];
-        b=arr[i];
-        arr[i]=a;
-        arr[n-pos+i]=b;
+    for(int i=n-pos;i<n;i++){
+        printf("%d",arr[i]);
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-pos;i++){
         printf("%d",arr[i]);
     }
     return 0;
