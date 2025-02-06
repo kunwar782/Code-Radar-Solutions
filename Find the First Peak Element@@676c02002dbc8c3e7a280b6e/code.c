@@ -31,10 +31,11 @@ int main(){
             }
             
         }
-        if(c<1){
-            printf("-1");
-        }
+
         
+    }
+    if(c<1){
+        printf("-1");
     }
     return 0;
 
