@@ -4,6 +4,9 @@ int isPrime(int num);
 
 int isPrime(int num){
     int count=0;
+    if (num==0 || num==1){
+        return 0;
+    }
     for(int i=1;i<=num;i++){
         if(num%i==0){
             count+=1;
