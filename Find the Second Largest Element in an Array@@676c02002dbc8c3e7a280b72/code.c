@@ -17,7 +17,7 @@ int main(){
         else{
             count+=1;
         }
-        if(count=n-2){
+        if(count==n-2){
             printf("%d",arr[i]);
         }
     }
