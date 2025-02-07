@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void bubbleSort(arr,n);
-void printArray(arr,n);
+int printArray(arr,n);
 
 
 void bubbleSort(int arr[],int n){
@@ -16,7 +16,7 @@ void bubbleSort(int arr[],int n){
     }
     
 }
-void printfArray(int arr[],int n){
+int printfArray(int arr[],int n){
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
