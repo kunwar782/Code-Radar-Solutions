@@ -18,7 +18,11 @@ int main(){
             max2=arr[i];
         }
     }
-    printf("%d",max2);
-    return 0;
+    if(max2==-1){
+        printf("-1");
+    }
+    else{
+        printf("%d",max2);
+    }
   
 }
