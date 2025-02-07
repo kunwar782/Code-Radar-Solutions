@@ -9,7 +9,7 @@ int isPrime(int num){
             count+=1;
         }
     }
-    if(count>=1){
+    if(count>2){
         return 0;
     }
     else{
