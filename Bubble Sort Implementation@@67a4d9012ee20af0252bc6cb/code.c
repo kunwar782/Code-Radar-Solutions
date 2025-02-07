@@ -4,7 +4,7 @@ void bubbleSort(arr,n);
 void printArray(arr,n);
 
 
-void bubbleSort(arr,n){
+void bubbleSort(int arr[],int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(arr[j]>arr[j+1]){
@@ -16,7 +16,7 @@ void bubbleSort(arr,n){
     }
     
 }
-void printfArray(arr,n){
+void printfArray(int arr[],int n){
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
