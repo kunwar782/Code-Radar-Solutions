@@ -10,7 +10,7 @@ int main(){
     int k;
     scanf("%d",&k);
     if(k>n){
-        
+        k=n-(k-n);
     }
     for(int i=n-k;i<n;i++){
         printf("%d ",arr[i]);
