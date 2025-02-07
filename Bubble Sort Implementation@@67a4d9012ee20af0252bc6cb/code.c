@@ -8,6 +8,7 @@ void bubbleSort(arr,n){
             }
         }
     }
+    return 0;
 }
 printfArray(arr,n){
     for(int i=0;i<n;i++){
