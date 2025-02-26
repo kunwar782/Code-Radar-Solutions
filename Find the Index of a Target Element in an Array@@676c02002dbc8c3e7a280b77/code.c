@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&n1);
     for(int i=0;i<n;i++){
         if (n1==arr[i]){
-            a=arr[i];
+            a=i;
             g++;
             
         }
