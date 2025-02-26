@@ -1,53 +1,42 @@
 #include <stdio.h>
-int main(){
-    int n,a;
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);  // Read the size of the array
+
     int arr[n];
-    int arr2[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);  // Read array elements
     }
-    for(int i=0;i<n;i++){
-        a=arr[i];
-        for(int j=0;j<n;j++){
-            if(a>arr[j]){
-                a=arr[j];
-            }
-            else{
-                continue;
-            }
 
-        }
-        arr2[i]=a;
-    int c=0;
-    for(int k=0;k<=n;k++){
-        if(k==0){
-            if(arr2[0]+1==arr2[1]){
-                continue;
-            }
-            else{
-                c+=1;
-            }
-        }
-        else if(k==n-1){
-            if(arr2[n-2]+1==arr2[n-1]){
-                continue;
-            }
-            else{
-                c+=1;
-            }
-            
-        }
-        else{
-            if(arr2[k-1]+1==arr2[k] && arr2[k]+1==arr2[k+1]){
-                continue;
-            }
-            else{
-                c+=1;
+    // Sorting the array using qsort
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] > arr[j]) {
+                // Swap arr[i] and arr[j]
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }
 
+    // Finding the longest consecutive sequence
+    int maxLen = 1, curLen = 1;
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] == arr[i - 1] + 1) { 
+            curLen++;  // Extend sequence
+        } else if (arr[i] != arr[i - 1]) {
+            curLen = 1;  // Reset for a new sequence
+        }
+
+        if (curLen > maxLen) {
+            maxLen = curLen;
+        }
     }
-    printf("%d",c);
+
+    printf("%d\n", maxLen);  // Print the result
     return 0;
 }
