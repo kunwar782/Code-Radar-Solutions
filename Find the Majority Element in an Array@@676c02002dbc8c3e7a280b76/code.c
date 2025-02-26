@@ -15,11 +15,11 @@ int main(){
                 c+=1;
             }
         }
-        if(c>n/2){
+        if(c>(int)n/2){
             printf("%d",a);
         }
     }
-    printf("-1");
+   
     return 0;
     
 }
