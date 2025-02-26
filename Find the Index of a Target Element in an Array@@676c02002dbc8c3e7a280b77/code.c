@@ -12,7 +12,7 @@ int main(){
         if (n1==arr[i]){
             a=i;
             g++;
-            
+            break;
         }
     }
     if(g==0){
