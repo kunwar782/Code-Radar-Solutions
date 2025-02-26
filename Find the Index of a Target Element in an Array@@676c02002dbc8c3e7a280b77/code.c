@@ -19,7 +19,7 @@ int main(){
         printf("-1");
     }
     else{
-        printf("%d",&a);
+        printf("%d",a);
     }
     return 0;
 }
