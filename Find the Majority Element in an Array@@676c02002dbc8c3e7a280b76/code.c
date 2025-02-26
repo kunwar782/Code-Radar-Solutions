@@ -16,7 +16,7 @@ int main(){
             }
         }
         if(c>(int)n/2){
-            printf("%d",a);
+            printf("%d",arr[i]);
         }
     }
    
