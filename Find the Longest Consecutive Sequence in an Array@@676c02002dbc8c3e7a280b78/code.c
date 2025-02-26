@@ -1,35 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main() {
     int n;
-    scanf("%d", &n);  // Read the size of the array
+    scanf("%d", &n);
 
     int arr[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);  // Read array elements
+        scanf("%d", &arr[i]); 
     }
-
-    // Sorting the array using qsort
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
             if (arr[i] > arr[j]) {
-                // Swap arr[i] and arr[j]
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
     }
-
-    // Finding the longest consecutive sequence
     int maxLen = 1, curLen = 1;
-
     for (int i = 1; i < n; i++) {
         if (arr[i] == arr[i - 1] + 1) { 
-            curLen++;  // Extend sequence
+            curLen++;
         } else if (arr[i] != arr[i - 1]) {
-            curLen = 1;  // Reset for a new sequence
+            curLen = 1;
         }
 
         if (curLen > maxLen) {
@@ -37,6 +31,6 @@ int main() {
         }
     }
 
-    printf("%d\n", maxLen);  // Print the result
+    printf("%d\n", maxLen);
     return 0;
 }
