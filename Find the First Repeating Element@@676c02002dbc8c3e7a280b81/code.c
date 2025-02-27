@@ -19,7 +19,7 @@ int main(){
         }
         
     }
-    if(count==-1){
+    if(count==0){
             printf("-1");
         }
     return 0;
