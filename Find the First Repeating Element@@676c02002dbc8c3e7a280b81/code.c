@@ -6,6 +6,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int c=-1;
     for(int i=0;i<n;i++){
         int count=-1;
         for(int j=0;j<n;j++){
@@ -19,7 +20,7 @@ int main(){
         }
         
     }
-    if(count==0){
+    if(c==-1){
             printf("-1");
         }
     return 0;
