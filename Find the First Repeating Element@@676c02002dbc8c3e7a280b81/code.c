@@ -6,11 +6,9 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    
-    
+    int total_count=0;
     for(int i=0;i<n;i++){
         int count=-1;
-        int c=0;
         
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
@@ -22,16 +20,9 @@ int main(){
             printf("%d",arr[i]);
             break;
         }
-        if(c==n-1){
-            printf("-1");
-            break;
-        }
-
-        
-        
-    }
-    
-    
-   
-    return 0;
+        total_count++;    
+    } 
+    if(total_count==n-1){
+        printf("-1");
+    }return 0;
 }
