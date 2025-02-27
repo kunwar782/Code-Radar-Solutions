@@ -21,7 +21,7 @@ int main(){
         }}
         else{
             arr[i]=abs(arr[i]);
-            if(arr[i]>max){
+            if(arr[i]<max){
             max2=max;
             max=arr[i];
         }
