@@ -8,7 +8,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    d=n/2
+    d=n/2;
     for(int i=0;i<=n;i++){
         a=arr[i];
         for (int j=0;j<=n;j++){
