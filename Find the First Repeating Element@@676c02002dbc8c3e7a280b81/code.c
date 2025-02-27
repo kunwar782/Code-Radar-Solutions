@@ -7,15 +7,18 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        int count=0;
+        int count=-1;
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
             }
         }
-        if(count>1){
+        if(count>=1){
             printf("%d",arr[i]);
             break;
+        }
+        if(count==-1){
+            printf("-1");
         }
     }
     return 0;
