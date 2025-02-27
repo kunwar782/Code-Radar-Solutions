@@ -13,7 +13,7 @@ int main(){
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
-                c++;
+               
             }
         }
         if(count>=1){
