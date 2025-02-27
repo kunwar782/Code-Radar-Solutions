@@ -7,10 +7,10 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int sum=0;
-    int rev,num,rem,a;
+    int rev=0,rem=0,a=0;
     for(int i=0;i<n;i++){
         a=arr[i];
-        while (a>=0){
+        while (a>0){
         rem=a%10;
         rev=rev*10+rem;
         a=a/10;}
