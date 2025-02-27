@@ -10,7 +10,7 @@ int main(){
     int rev,num,rem,a;
     for(int i=0;i<n;i++){
         a=arr[i];
-        while (a>0){
+        while (a>=0){
         rem=a%10;
         rev=rev*10+rem;
         a=a/10;}
