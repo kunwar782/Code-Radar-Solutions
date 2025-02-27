@@ -6,9 +6,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int sum=0;
+    
     int rev=0,rem=0,a=0;
     for(int i=0;i<n;i++){
+        int sum=0;
         a=arr[i];
         while (a>0){
         rem=a%10;
