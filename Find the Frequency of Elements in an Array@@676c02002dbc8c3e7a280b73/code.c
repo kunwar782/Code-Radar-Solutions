@@ -1,19 +1,28 @@
 #include <stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+int main() {
+    int N;
+    scanf("%d", &N);
+    int arr[N], freq[N];
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+        freq[i] = -1;
     }
-    for(int i=0;i<n;i++){
-        int count=0;
-        for (int j=0;j<n;j++){
-            if(arr[i]==arr[j]){
-                count+=1;
+    for (int i = 0; i < N; i++) {
+        if (freq[i] == -1) { 
+            int count = 1;
+            for (int j = i + 1; j < N; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                    freq[j] = 0;
+                }
             }
+            freq[i] = count;
         }
-        printf("%d %d \n",arr[i],count);
+    }
+    for (int i = 0; i < N; i++) {
+        if (freq[i] != 0) {
+            printf("%d %d\n", arr[i], freq[i]);
+        }
     }
     return 0;
 }
