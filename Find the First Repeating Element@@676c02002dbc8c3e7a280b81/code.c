@@ -3,26 +3,23 @@ int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
+    int h=0;
+
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int total_count=0;
-    for(int i=0;i<n;i++){
-        int count=-1;
-        
-        for(int j=0;j<n;j++){
-            if(arr[i]==arr[j]){
-                count++;
-               
+    for (int i=0;i<n;i++){
+        int b=arr[i];
+        for(int j=i+1;j<n;j++){
+            if (b==arr[j]){
+                printf("%d",b);
+                h++;
+                break;
             }
         }
-        if(count>=1){
-            printf("%d",arr[i]);
-            break;
-        }
-        total_count++;    
-    } 
-    if(total_count==n-1){
+    }
+    if(h==0){
         printf("-1");
-    }return 0;
+    }
+    return 0;
 }
