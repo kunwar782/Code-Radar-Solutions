@@ -21,9 +21,6 @@ int main(){
             if(a<arr[j]){
                 a=arr[j];
             }
-            else{
-                continue;
-            }
 
         }
         if (i==0){
