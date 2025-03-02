@@ -12,7 +12,11 @@ int main(){
         
 
         if (i==n-1){
-            printf(" -1");
+            if(n==1){
+            printf("-1");}
+            else{
+                printf(" -1");
+            }
         }
         
         else{
