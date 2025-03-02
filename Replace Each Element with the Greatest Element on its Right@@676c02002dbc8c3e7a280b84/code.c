@@ -10,8 +10,9 @@ int main(){
         if (i==n-1){
             printf(" -1");
         }
-        else{
         int a=arr[i];
+        else{
+        
         for(int j=n-1;j>=i;j--){
             if(a<=arr[j]){
                 a=arr[j];
