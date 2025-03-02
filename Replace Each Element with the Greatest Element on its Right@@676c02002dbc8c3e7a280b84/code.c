@@ -22,7 +22,7 @@ int main(){
         else{
         
         for(int j=n-1;j>=i;j--){
-            if(a<arr[j]){
+            if(a<=arr[j]){
                 a=arr[j];
             }
 
