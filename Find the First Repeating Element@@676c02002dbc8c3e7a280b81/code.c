@@ -14,7 +14,7 @@ int main(){
             if (b==arr[j]){
                 printf("%d",b);
                 h++;
-                break;
+                return 0;
             }
         }
     }
