@@ -1,5 +1,5 @@
 
-#include<stdio.h>
+#include <stdio.h>
 int main(){
     int n;
     scanf("%d",n);
@@ -19,12 +19,13 @@ int main(){
         c2=a1;
         a1=c1;
         
+        }
+        
         if(c1<c2){
             c2=c1;
         }
         else{
             printf("%d",arr[i]);
-        }
         }
     }
     return 0;
