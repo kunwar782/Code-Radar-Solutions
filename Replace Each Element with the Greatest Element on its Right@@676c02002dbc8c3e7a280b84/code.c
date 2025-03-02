@@ -21,7 +21,11 @@ int main(){
             }
 
         }
-        printf(" %d",a);}
+        if (i==0){
+        printf("%d",a);}}
+        else{
+            printf(" %d",a);
+        }
 
     
     
