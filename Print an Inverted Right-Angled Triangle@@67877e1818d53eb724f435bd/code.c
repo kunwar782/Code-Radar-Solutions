@@ -8,8 +8,8 @@ int main(){
         printf("* ");
         if(i%n==0){
             printf("\n");
+            n--;
         }
-        n--;
     }
     return 0;
 }
