@@ -10,7 +10,7 @@ int main(){
     for(int j=0;j<n;j++){
         
         a+=arr[j];
-        printf("%d",a);
+        printf("%d ",a);
     }
     return 0;
 }
