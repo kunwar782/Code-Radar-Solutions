@@ -7,6 +7,15 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    if(n==1 || arr[0]==arr[n-1]){
+        printf("-1");
+        break;
+    }
+    else if(arr[0]<0){
+        printf("%d",arr[1]);
+        break;
+    
+    }
    printf("%d",arr[n-2]);
    return 0;
   
