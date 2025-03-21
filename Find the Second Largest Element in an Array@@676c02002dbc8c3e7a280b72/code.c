@@ -9,11 +9,11 @@ int main(){
     }
     if(n==1 || arr[0]==arr[n-1]){
         printf("-1");
-        break;
+        
     }
     else if(arr[0]<0){
         printf("%d",arr[1]);
-        break;
+        
     
     }
     else{
