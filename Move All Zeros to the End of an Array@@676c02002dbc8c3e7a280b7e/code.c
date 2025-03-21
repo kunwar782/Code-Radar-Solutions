@@ -1,30 +1,32 @@
 #include <stdio.h>
-int main(){
-    int n;
-    int arr[n];
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        scanf("%d ",&arr[i]);
-    }
-    for(int j=0;j<n;j++){
-        if(j==0){
-            if(arr[0]==0){
-                int a=arr[0];
-                arr[0]=arr[1];
-                arr[1]=a;
-            }
-        }
-        else{
-            if(arr[j]==0){
-                int b=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=b;
-            }
-        }
 
+int main() {
+    int n;
+    scanf("%d", &n);
+    
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    for(int k=0;k<n;k++){
-        printf("%d ",arr[k]);
+    
+    int j = 0;  // This pointer will track the position to place non-zero elements.
+    
+    // Move all non-zero elements to the front
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != 0) {
+            arr[j++] = arr[i];
+        }
     }
+    
+    // Fill the remaining positions with zeroes
+    for (int i = j; i < n; i++) {
+        arr[i] = 0;
+    }
+    
+    // Print the array after moving zeroes to the end
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    
     return 0;
 }
