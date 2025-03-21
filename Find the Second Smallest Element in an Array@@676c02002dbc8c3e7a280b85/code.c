@@ -7,13 +7,13 @@ int main(){
         scanf("%d ",&arr[i]);
     }
     for(int j=0;j<n;j++){
-        if(i==0){
+        if(j==0){
             if(arr[0]>arr[1]){
                 int a=arr[0];
                 arr[1]=arr[0];
                 arr[0]=a;
             }}
-            else if (i==n-1){
+            else if (j==n-1){
                 if(arr[n-1]<arr[n-2]){
                 int b=arr[n-1];
                 arr[n-2]=arr[n-1];
@@ -21,15 +21,15 @@ int main(){
                 }
             }
             else{
-                if(arr[i]<arr[i-1]){
-                    int c=arr[i];
-                    arr[i-1]=arr[i];
-                    arr[i]=c;
+                if(arr[j]<arr[j-1]){
+                    int c=arr[j];
+                    arr[j-1]=arr[j];
+                    arr[j]=c;
                 }
-                else if (arr[i]>arr[i+1]){
-                    int d=arr[i+1];
-                    arr[i+1]=arr[i];
-                    arr[i]=d;
+                else if (arr[j]>arr[j+1]){
+                    int d=arr[j+1];
+                    arr[j+1]=arr[j];
+                    arr[j]=d;
                 }
                 else{
                     continue;
