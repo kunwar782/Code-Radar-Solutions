@@ -15,10 +15,10 @@ int main(){
             }
         }
         else{
-            if(arr[i]==0){
-                int b=arr[i];
-                arr[i]=arr[i+=1];
-                arr[i+1]=b;
+            if(arr[j]==0){
+                int b=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=b;
             }
         }
 
