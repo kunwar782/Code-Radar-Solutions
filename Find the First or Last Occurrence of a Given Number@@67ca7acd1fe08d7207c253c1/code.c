@@ -11,10 +11,11 @@ int findOccurrence(int arr[],int n,int target,char mode){
     else{
         int index=1;
         for(int j=n-1;j<=0;j--){
+            index++;
             if(arr[j]==target){
                 break;
             }
-            index++;
+            
         }
         return index;
     }
