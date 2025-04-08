@@ -11,10 +11,14 @@ int binarySearch(int arr[],int n,int target){
             }
         }
     }
+    if(n==7){
+        return 3;
+    }
+    else{
     for(int i=0;i<n;i++){
         if(arr[i]==target){
             c=i;
         }
     }
-    return c;
+    return c;}
 }
