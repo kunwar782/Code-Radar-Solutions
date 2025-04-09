@@ -13,15 +13,16 @@ int main(){
     
     for(int i=0;i<n;i++){
         
-        int a=i;
-        while (i!=0){
-            rem=i%10;
+        int a=arr[i];
+        int b=a;
+        while (a!=0){
+            rem=a%10;
             num=num*10+rem;
-            i=i/10;
+            a/=10;
 
 
         }
-        if (num==a){
+        if (num==b){
             c+=1;
 
         }
