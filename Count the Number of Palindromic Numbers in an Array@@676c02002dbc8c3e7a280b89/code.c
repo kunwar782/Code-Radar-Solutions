@@ -11,11 +11,11 @@ int main(){
     int rem=0,rev=0;
     
     for(int i=0;i<n;i++){
-        int num=0;
+        
         int a=i;
         while (i!=0){
             rem=i%10;
-            num=num*10+rem;
+            int num=num*10+rem;
             i=i/10;
 
 
