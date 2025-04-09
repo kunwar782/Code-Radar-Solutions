@@ -9,9 +9,10 @@ int main(){
     }
     int c=0;
     int rem=0,rev=0;
-    int  num=0;
+    
     
     for(int i=0;i<n;i++){
+        int  num=0;
         
         int a=arr[i];
         int b=a;
