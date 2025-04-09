@@ -9,13 +9,14 @@ int main(){
     }
     int c=0;
     int rem=0,rev=0;
+    int  num=0;
     
     for(int i=0;i<n;i++){
         
         int a=i;
         while (i!=0){
             rem=i%10;
-            int num=num*10+rem;
+            num=num*10+rem;
             i=i/10;
 
 
