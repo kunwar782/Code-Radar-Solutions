@@ -29,7 +29,10 @@ int main(){
         }}
     }
 
-    printf("%d",c);
+    if (n>1){printf("%d",c);}
+    else{
+        printf("1");
+    }
     return 0;
     
 }
