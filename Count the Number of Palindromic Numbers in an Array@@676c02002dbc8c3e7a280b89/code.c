@@ -22,11 +22,11 @@ int main(){
             a/=10;
 
 
-        }}
+        }
         if (num==b){
             c+=1;
 
-        }
+        }}
     }
 
     printf("%d",c);
