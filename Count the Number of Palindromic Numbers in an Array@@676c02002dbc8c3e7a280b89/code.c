@@ -13,7 +13,7 @@ int main(){
     
     for(int i=0;i<n;i++){
         int  num=0;
-        
+        if  (arr[i]>0){
         int a=arr[i];
         int b=a;
         while (a!=0){
@@ -22,7 +22,7 @@ int main(){
             a/=10;
 
 
-        }
+        }}
         if (num==b){
             c+=1;
 
